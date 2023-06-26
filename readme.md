@@ -12,7 +12,11 @@
 * Hosting, Domain, Wartung ?
 * Anpassen der Seite ?
 * Suchmachschienenoptimierung (SEO) (https://developers.google.com/search/docs/fundamentals/seo-starter-guide?hl=de ///
-  https://developers.google.com/search/docs/essentials?hl=de) 
+  https://developers.google.com/search/docs/essentials?hl=de) - relativ wichtig
+* Datenschutzerklärung und Impressum - wichtig
+* Darstellung auf allen Devices - wichtig
+* (Möglichkeit von Schulungsunterlagen) - evtl.
+* (Onlineshop) - später
 
 Zum Anpassen der Seite werden wir Excel Tablellen bereitstellen. 
 Diese können wir dann automatisisert in Markdown code konvertieren lassen um 
