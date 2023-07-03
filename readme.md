@@ -2,7 +2,8 @@
 
 ## Technologien und Kosten
 
-* Statische Webseite mit Hugo https://gohugo.io/ ~Open Source
+* Statische Webseite mit Hugo https://gohugo.io/ 
+* (Alternativ) Django https://www.djangoproject.com/
 * Hosting über html server. (evtl Hetzner oder anfangs eigener Server) ~Pro Seite Kosten im centbereich
 * Domain (z.b. https://www.checkdomain.de/domainregistrieren/) ~10€ pro Seite pro Jahr (unterschiedlich je nach Domain)
 
@@ -17,8 +18,4 @@
 * Darstellung auf allen Devices - wichtig
 * (Möglichkeit von Schulungsunterlagen) - evtl.
 * (Onlineshop) - später
-
-Zum Anpassen der Seite werden wir Excel Tablellen bereitstellen. 
-Diese können wir dann automatisisert in Markdown code konvertieren lassen um 
-z.b. die Speisenkarte zu aktualisieren.
 
