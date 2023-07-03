@@ -2,8 +2,7 @@
 
 ## Technologien und Kosten
 
-* Statische Webseite mit Hugo https://gohugo.io/ 
-* (Alternativ) Django https://www.djangoproject.com/
+* Django https://www.djangoproject.com/
 * Hosting über html server. (evtl Hetzner oder anfangs eigener Server) ~Pro Seite Kosten im centbereich
 * Domain (z.b. https://www.checkdomain.de/domainregistrieren/) ~10€ pro Seite pro Jahr (unterschiedlich je nach Domain)
 
