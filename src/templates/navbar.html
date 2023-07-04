@@ -1,6 +1,23 @@
-<h1> 
-    <a href={% url "startseite" %}>Startseite</a>                                
-    <a href={% url "speisekarte" %}>Speisekarte</a> 
-</h1>
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <div class="container">
+        <a href={% url "startseite" %} class="navbar-brand">Pizzaria Demico</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu"> 
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
+        <div class="collapse navbar-collapse" id="navmenu">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a href={% url "startseite" %} class="nav-link">Startseite</a>
+                </li>
+                <li class="nav-item">
+                    <a href={% url "speisekarte" %} class="nav-link">Speisekarte</a>
+                </li>
+                <li class="nav-item">
+                    <a href={% url 'admin:index' %} class="nav-link">Login</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
 <hr>

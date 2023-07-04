@@ -1,25 +1,19 @@
 {% extends "main.html" %}
-
 {% block content %}
 <h1>Speisekarte</h1>
-
 <div>
     <div>
         {% for kategorie in kategorien %}
         <div> 
             <h2> {{kategorie.name}} </h2>
-
-            {% for gericht in gerichte%}
-            {% if gericht.kategorie == kategorie %}
+            {% for gericht in gerichte%} {% if gericht.kategorie == kategorie %}
             <div> 
-                <h3> {{ gericht.name}} : {{gericht.preis}}</h3>
+                <h3> {{ gericht.name}} : {{gericht.preis}}€</h3>
                 <p> {{ gericht.description }} </p>
             </div>
-            {% endif %}
-            {% endfor %}
+            {% endif %} {% endfor %}
         </div>
         {% endfor %}
     </div>
 </div>
-
 {% endblock content %}
