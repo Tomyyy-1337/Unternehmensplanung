@@ -1,0 +1,31 @@
+Enviorment erstellen:
+virtualenv env
+
+Environment wählen:
+.\env\Scripts\activate 
+
+Django installieren:
+pip istall Django
+
+Django Projekt erstellen:
+django-admin startproject Demo
+
+Start Server:
+python manage.py runserver 
+
+App erstellen:
+python manage.py startapp name
+
+DB init:
+python .\manage.py migrate
+
+DB neues Modell 
+python .\manage.py makemigrations
+python .\manage.py migrate
+
+DB super-user erstellen:
+python .\manage.py createsuperuser
+
+Login:
+admin
+root

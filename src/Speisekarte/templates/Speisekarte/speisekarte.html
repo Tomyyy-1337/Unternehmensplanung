@@ -1,0 +1,17 @@
+{% extends "main.html" %}
+
+{% block content %}
+<h1>Speisekarte</h1>
+
+<div>
+    <div>
+        {% for gericht in gerichte %}
+            <div> 
+                <h3> {{ gericht.name}} : {{gericht.preis}}</h3>
+                <p> {{ gericht.description }} </p>
+            </div>
+        {% endfor %}
+    </div>
+</div>
+
+{% endblock content %}
