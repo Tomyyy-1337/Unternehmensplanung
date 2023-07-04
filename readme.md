@@ -2,9 +2,10 @@
 
 ## Technologien und Kosten
 
-* Django https://www.djangoproject.com/ (Fullstack) evtl Bootstrap
-* Hosting über html server. (evtl Hetzner oder anfangs eigener Server) ~Pro Seite Kosten im centbereich
-* Domain (z.b. https://www.checkdomain.de/domainregistrieren/) ~10€ pro Seite pro Jahr (unterschiedlich je nach Domain)
+* Backend: Django https://www.djangoproject.com/ (SqlLite)
+* Frontend: Bootstrap https://getbootstrap.com/
+* Hosting über django server
+* Domain (z.b. https://www.checkdomain.de/domainregistrieren/) 
 
 ## Services und Preise
 
@@ -17,4 +18,3 @@
 * Darstellung auf allen Devices - wichtig
 * (Möglichkeit von Schulungsunterlagen) - evtl.
 * (Onlineshop) - später
-
