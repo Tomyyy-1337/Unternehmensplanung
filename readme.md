@@ -2,7 +2,7 @@
 
 ## Technologien und Kosten
 
-* Backend: Django https://www.djangoproject.com/ (SqlLite)
+* Backend: Django https://www.djangoproject.com/
 * Frontend: Bootstrap https://getbootstrap.com/
 * Hosting über django server
 * Domain (z.b. https://www.checkdomain.de/domainregistrieren/) 
