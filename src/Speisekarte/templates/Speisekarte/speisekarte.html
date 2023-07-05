@@ -2,9 +2,15 @@
 {% block content %}
 <div class="container">
     <h1 class="p-4 text-center">Speisekarte</h1>
+        <div class="row h-100 d-flex align-items-center justify-content-center">
+            {% for kategorie in kategorien %}
+                <a class="btn rounded-0 btn-lg btn-dark col-lg-2 col-md-4 col-sm-6 p-2" href="#{{kategorie.name}}" role="button">{{kategorie.name}}</a>
+            {% endfor %}
+        </div>
+    <hr>    
     <ol class="list-group list-group-numbered">
         {% for kategorie in kategorien %}
-            <h3 class="p-4 bg-dark text-white"> {{kategorie.name}} </h3>
+            <h3 class="p-4 bg-dark text-white" id={{kategorie.name}}> {{kategorie.name}} </h3>
             {% for gericht in gerichte%} {% if gericht.kategorie == kategorie %}
             <li class="list-group-item d-flex justify-content-between align-items-start">
                 <div class="ms-2 me-auto">
