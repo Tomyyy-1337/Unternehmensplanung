@@ -13,6 +13,9 @@ django-admin startproject Demo
 Start Server:
 python manage.py runserver 
 
+Start Server local network: (IP des Host im lokalen Netzwerk)
+python manage.py runserver 192.168.178.49:8000 
+
 App erstellen:
 python manage.py startapp name
 

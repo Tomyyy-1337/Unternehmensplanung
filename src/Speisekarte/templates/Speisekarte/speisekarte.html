@@ -1,19 +1,21 @@
 {% extends "main.html" %}
 {% block content %}
-<h1>Speisekarte</h1>
-<div>
-    <div>
+<div class="container">
+    <h1 class="p-4 text-center">Speisekarte</h1>
+    <ol class="list-group list-group-numbered">
         {% for kategorie in kategorien %}
-        <div> 
-            <h2> {{kategorie.name}} </h2>
+            <h3 class="p-4 bg-dark text-white"> {{kategorie.name}} </h3>
             {% for gericht in gerichte%} {% if gericht.kategorie == kategorie %}
-            <div> 
-                <h3> {{ gericht.name}} : {{gericht.preis}}€</h3>
-                <p> {{ gericht.description }} </p>
-            </div>
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                <div class="fw-bold">{{ gericht.name}}</div>
+                {{ gericht.description }}
+                </div>
+                <span class="badge bg-dark rounded-pill">{{gericht.preis}}€</span>
+            </li>
             {% endif %} {% endfor %}
-        </div>
+            <hr>
         {% endfor %}
-    </div>
+    </ol>
 </div>
 {% endblock content %}
