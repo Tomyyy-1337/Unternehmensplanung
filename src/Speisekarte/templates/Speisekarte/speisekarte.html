@@ -1,27 +1,31 @@
 {% extends "main.html" %}
 {% block content %}
+<section>
 <div class="container">
-    <h1 class="p-4 text-center">Speisekarte</h1>
+    <div class="container">
+        <h1 class="p-4 text-center text-primary-emphasis"><strong>Speisekarte</strong></h1>
         <div class="row h-100 d-flex align-items-center justify-content-center">
             {% for kategorie in kategorien %}
-                <a class="btn rounded-0 btn-lg btn-dark col-lg-2 col-md-4 col-sm-6 p-2" href="#{{kategorie.name}}" role="button">{{kategorie.name}}</a>
+            <a class="btn pt-2 pb-2 pt-xl-3 pb-xl-3  col-xl-2 col-lg-4 col-md-4 col-sm-6 p-1 my-1 my-xl-0" href="#{{kategorie.name}}" role="button">{{kategorie.name}}</a>
             {% endfor %}
         </div>
+    </div>
     <hr>    
-    <ol class="list-group list-group-numbered">
+    <ol class="list-group list-group-numbered dark">
         {% for kategorie in kategorien %}
-            <h3 class="p-4 bg-dark text-white" id={{kategorie.name}}> {{kategorie.name}} </h3>
-            {% for gericht in gerichte%} {% if gericht.kategorie == kategorie %}
-            <li class="list-group-item d-flex justify-content-between align-items-start">
-                <div class="ms-2 me-auto">
+        <h3 class="p-4 pb-3 bg-dark text-white" id={{kategorie.name}}> {{kategorie.name}} </h3>
+        {% for gericht in gerichte%} {% if gericht.kategorie == kategorie %}
+        <li class="list-group-item d-flex justify-content-between align-items-start text-primary-emphasis {% cycle 'primary' 'bg-secondary' %}">
+            <div class="ms-2 me-auto">
                 <div class="fw-bold">{{ gericht.name}}</div>
                 {{ gericht.description }}
-                </div>
-                <span class="badge bg-dark rounded-pill">{{gericht.preis}}€</span>
-            </li>
-            {% endif %} {% endfor %}
-            <hr>
+            </div>
+            <span class="badge bg-dark rounded-pill">{{gericht.preis}}€</span>
+        </li>
+        {% endif %} {% endfor %}
+        <section class="bg-light"><br></section>
         {% endfor %}
     </ol>
 </div>
-{% endblock content %}
+</section>
+{% endblock content %} 
