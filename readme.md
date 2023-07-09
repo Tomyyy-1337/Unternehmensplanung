@@ -10,6 +10,7 @@
 
 * Seite erstellen ~500€
 * Hosting, Domain, Wartung ?
+* SSL zertifikat (für https)
 * Anpassen der Seite ?
 * Suchmachschienenoptimierung (SEO) (https://developers.google.com/search/docs/fundamentals/seo-starter-guide?hl=de ///
   https://developers.google.com/search/docs/essentials?hl=de) - relativ wichtig
