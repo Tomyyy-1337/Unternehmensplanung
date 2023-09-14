@@ -5,7 +5,7 @@ Environment wählen:
 .\env\Scripts\activate 
 
 Django installieren:
-pip istall Django
+pip install Django
 
 Django Projekt erstellen:
 django-admin startproject Demo
